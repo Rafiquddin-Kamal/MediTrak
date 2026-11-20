@@ -1,0 +1,14 @@
+# Optional: run MongoDB with Docker instead of installing it.
+#   docker compose up -d
+services:
+  mongo:
+    image: mongo:8
+    container_name: meditrack-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - meditrack-mongodata:/data/db
+
+volumes:
+  meditrack-mongodata:

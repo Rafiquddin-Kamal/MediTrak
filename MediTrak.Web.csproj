@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MediTrack.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Official MongoDB C# driver -->
+    <PackageReference Include="MongoDB.Driver" Version="3.*" />
+  </ItemGroup>
+
+</Project>
